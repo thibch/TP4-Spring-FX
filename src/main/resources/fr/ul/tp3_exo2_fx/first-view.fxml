@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="223.0" prefWidth="340.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.tp3_exo2_fx.controller.FirstViewController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="cards" text="Gestion des cartes" textAlignment="CENTER" />
+   <HBox prefHeight="40.0" prefWidth="300.0" spacing="40.0">
+      <children>
+         <Button fx:id="addCard" minWidth="125.0" mnemonicParsing="false" onAction="#onAddCardClick" text="Ajouter carte" textAlignment="CENTER">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin></Button>
+         <Button fx:id="searchCard" minWidth="125.0" mnemonicParsing="false" onAction="#onSearchCardClick" text="Rechercher carte" textAlignment="CENTER">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Button>
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></HBox>
+   <HBox prefHeight="43.0" prefWidth="300.0" spacing="40.0">
+      <children>
+         <Button fx:id="deleteCard" minWidth="125.0" mnemonicParsing="false" onAction="#onDeleteCardClick" text="Supprimer carte" textAlignment="CENTER">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Button>
+         <Button fx:id="editCard" minWidth="125.0" mnemonicParsing="false" onAction="#onEditCardClick" text="Modifier carte" textAlignment="CENTER" />
+      </children></HBox>
+</VBox>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="166.0" prefWidth="354.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.tp3_exo2_fx.controller.DeleteView">
+<children>
+    <HBox alignment="BOTTOM_CENTER" prefHeight="44.0" prefWidth="308.0">
+        <children>
+            <Label prefHeight="24.0" prefWidth="87.0" text="Supprimer" />
+            <TextField fx:id="searchField" />
+            <Button fx:id="validateButton" mnemonicParsing="false" onAction="#validateButton" prefWidth="125.0" text="Valider" />
+        </children>
+    </HBox>
+    <Text fx:id="doneText" strokeType="OUTSIDE" strokeWidth="0.0" text="Done?" />
+      <Button mnemonicParsing="false" onAction="#onReturnClick" text="Return" />
+</children>
+</VBox>

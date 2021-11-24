@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.tp3_exo2_fx.controller.AddView">
+   <children>
+      <Label fx:id="titleText" text="Ajouter un carte" textAlignment="CENTER" />
+      <HBox alignment="CENTER" prefHeight="49.0" prefWidth="600.0" spacing="70.0">
+         <children>
+            <Label text="Nom" />
+            <TextField fx:id="titleField" prefHeight="24.0" prefWidth="200.0" />
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="41.0" prefWidth="600.0" spacing="70.0">
+         <children>
+            <Label text="Type" />
+            <TextField fx:id="typeField" prefWidth="200.0" />
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="41.0" prefWidth="600.0" spacing="60.0">
+         <children>
+            <Label text="Niveau" />
+            <TextField fx:id="priceField" prefWidth="200.0" />
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="38.0" />
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="360.0">
+         <children>
+            <Button fx:id="validateButton" mnemonicParsing="false" onAction="#validateButton" prefWidth="125.0" text="Valider" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#onReturnClick" text="Retour" />
+   </children>
+</VBox>
